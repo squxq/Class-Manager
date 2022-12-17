@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In Page</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+        <div class="modal-content">
+            <div id="login-form-wrap">
+                <div class="container">
+                    <h2 class="text">Log In</h2>
+                </div>
+                <form id="form">
+                    <div class="container">
+                        <input type="email" id="email" name="email" placeholder="Email Address" autocomplete="off"><i
+                            class="validation"><span></span><span></span></i>
+                    </div>
+                    <p class="error-email error"></p>
+                    <div class="container">
+                        <input type="password" id="password" name="password" placeholder="Password" autocomplete="off"><i
+                            class="validation"><span></span><span></span></i>
+                    </div>
+                    <p class="error-password error"></p>
+                    <div class="btn-container">
+                        <button type="submit" class="signupbtn" id="Signup">Login</button>
+                    </div>
+                </form>
+                <div id="login-account-wrap">
+                    <div class="container">
+                        <p class="text2">Already a member? <a href="/signup">Sign Up</a></p> 
+                    </div>
+                </div>
+                <div class="container"></div>
+            </div>
+        </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../script/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+.text {
+    font-size: 2rem;
+    text-align: center;
+}
+.text2 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Full-width input fields */
+input[type=text],
+input[type=email],
+input[type=password] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 0px 0;
+    display: inline-block;
+    border: 1px solid #474e5d;
+    background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none !important;
+    border: 1px solid #04AA6D;
+    box-shadow: 0 0 10px #04AA6D;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.8;
+    align-items: center;
+    font-size: 1rem;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+
+/* Float cancel and signup buttons and add an equal width */
+.signupbtn {
+    float: center;
+    width: 50%;
+    align-items: center;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 10px 12px 0px 12px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+    font-size: .85rem;
+}
+
+/* The Modal (background) */
+.background {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 35%;
+    height: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+
+    .signupbtn {
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1000px) {
+    body {
+        font-family: 'Roboto';
+    }
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: #04AA6D;
+    opacity: 0.8;
+}
+
+a:hover {
+    opacity: 1;
+}

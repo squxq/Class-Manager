@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+        <div class="modal-content">
+            <div id="signup-form-wrap">
+                <h2 class="text">Sign Up</h2>
+                <form id="form">
+                    <div class="container">
+                        <input type="text" id="firstname" name="firstname" placeholder="First Name" autocomplete="off"><i
+                            class="validation"><span></span><span></span></i>
+                    </div>
+                    <p class="error-firstname error"></p>
+                    <div class="container">
+                        <input type="text" id="lastname" name="lastname" placeholder="Last Name" autocomplete="off"><i
+                            class="validation"><span></span><span></span></i>
+                    </div>
+                    <p class="error-lastname error"></p>
+                    <div class="container">
+                        <input type="text" id="email" name="email" placeholder="Email Address" autocomplete="off"><i
+                            class="validation"><span></span><span></span></i>
+                    </div>
+                    <p class="error-email error"></p>
+                    <div class="container">
+                        <input type="password" id="password" name="password" placeholder="Password" autocomplete="off"><i
+                            class="validation"><span></span><span></span></i>
+                    </div>
+                    <p class="error-password error"></p>
+                    <div class="btn-container">
+                        <button type="submit" class="signupbtn" id="signup">Sign Up</button>
+                    </div>
+                </form>
+                <div class="container">
+                    <p class="text2">Already a member? <a href="/login">Log In</a></p>
+                </div>
+                <div class="container"></div>
+            </div>
+        </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../script/signup.js"></script>
+</body>
+</html>
